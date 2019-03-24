@@ -1,0 +1,24 @@
+.footer {
+  padding: 0 1.8rem 1.5rem;
+  @media screen and (min-width: 1000px) {
+    padding: 1rem 5rem 3rem;
+  }
+  & h5 {
+    margin-bottom: 1.5rem;
+  }
+
+  &__icons-container {
+    width: 65%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__icon {
+    width: 3rem;
+
+    @media screen and (min-width: 1000px) {
+      width: 4rem;
+    }
+  }
+}

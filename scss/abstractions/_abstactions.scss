@@ -5,3 +5,19 @@ $color-blue: #bbc4ef;
 $color-black: #333333;
 $color-white: #feffff;
 $color-grey: #a8ada3;
+
+%paragraph-shared {
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  color: $color-grey;
+  @media screen and (min-width: 800px) {
+    font-size: 1.8rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 2.278rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.563rem;
+  }
+}

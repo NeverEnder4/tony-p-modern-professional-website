@@ -7,13 +7,11 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.45;
 }
 
 p {
-  margin-bottom: 1.8rem;
-  font-size: 1.6rem;
-  color: $color-grey;
+  @extend %paragraph-shared;
 }
 
 h1,
@@ -38,12 +36,29 @@ h2 {
 }
 h3 {
   font-size: 2.563rem;
+  @media screen and (min-width: 800px) {
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 2.863rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3.244rem;
+  }
 }
 h4 {
   font-size: 2.278rem;
 }
 h5 {
   font-size: 2.025rem;
+  @media screen and (min-width: 800px) {
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 2.563rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 2.863rem;
+  }
 }
 h6 {
   font-size: 1.8rem;

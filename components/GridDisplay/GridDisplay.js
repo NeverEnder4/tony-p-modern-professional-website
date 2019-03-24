@@ -4,7 +4,7 @@ const GridDisplay = () => (
   <main className="grid-wrapper">
     <div className="grid-display">
       <div className="grid-display__item grid-display__item--small grid-display__item--small--green">
-        <img src="/static/talkr.png" alt="" />
+        <img src="/static/talkr-multi.png" alt="" />
       </div>
       <div className="grid-display__item grid-display__item--tall">
         <img src="/static/paperkag.png" alt="" />
