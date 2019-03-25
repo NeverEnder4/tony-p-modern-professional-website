@@ -33,6 +33,13 @@ h1 {
 
 h2 {
   font-size: 2.883rem;
+
+  @media screen and (min-width: 1000px) {
+    font-size: 3.244rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 3.456rem;
+  }
 }
 h3 {
   font-size: 2.563rem;
