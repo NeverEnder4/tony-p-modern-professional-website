@@ -1,13 +1,10 @@
-import Header from '../components/Header/Header';
-import Wrapper from '../components/Wrapper/Wrapper';
-import Footer from '../components/Footer/Footer';
+import Layout from '../components/Layout/Layout';
 
 import '../scss/pages/about.scss';
 
 const about = () => (
-  <React.Fragment>
-    <Header />
-    <Wrapper>
+  <Layout>
+    <div className="about">
       <section className="bio">
         <h3>Who I Am</h3>
         <p>
@@ -69,14 +66,13 @@ const about = () => (
       <section className="services">
         <h3>What I Can Do For You</h3>
         <p>
-          I can build a website or web solution for you business or personal
-          needs. Each problem that a client brings to me is met with a
+          I can design and build a website or web solution for you business or
+          personal needs. Each problem that a client brings to me is met with a
           personalized web solution. What’s your problem? Let’s tackle it.
         </p>
       </section>
-    </Wrapper>
-    <Footer />
-  </React.Fragment>
+    </div>
+  </Layout>
 );
 
 export default about;

@@ -46,7 +46,7 @@
       visibility: hidden;
       opacity: 0;
       animation: fade-in 300ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards
-        700ms;
+        400ms;
     }
 
     &--small {
@@ -59,15 +59,14 @@
         grid-row: 1;
         grid-column: 1;
         transform: scaleX(0);
-        animation: scale-right 700ms cubic-bezier(0.19, 1, 0.22, 1) forwards
-          200ms;
+        animation: scale-right 500ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
       }
       &--blue {
         background-color: $color-blue;
         grid-row: 2;
         grid-column: 1;
         transform: scaleY(0);
-        animation: scale-up 700ms cubic-bezier(0.19, 1, 0.22, 1) forwards 200ms;
+        animation: scale-up 500ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
         @media screen and (min-width: 1125px) {
           grid-row: 1;
           grid-column: 2;
@@ -80,7 +79,7 @@
       grid-column: 2;
       grid-row: 1 / span 2;
       transform: scaleY(0);
-      animation: scale-down 700ms cubic-bezier(0.19, 1, 0.22, 1) forwards 200ms;
+      animation: scale-down 500ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
       @media screen and (min-width: 1125px) {
         grid-row: 1 / span 2;
         grid-column: 3;
@@ -94,7 +93,7 @@
       grid-column: 1 / span 2;
       grid-row: 3;
       transform: scaleX(0);
-      animation: scale-left 700ms cubic-bezier(0.19, 1, 0.22, 1) forwards 200ms;
+      animation: scale-left 500ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
       @media screen and (min-width: 1125px) {
         grid-column: 1 / span 2;
         grid-row: 2;

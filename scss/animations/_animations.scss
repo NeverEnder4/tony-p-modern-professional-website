@@ -57,3 +57,26 @@
     visibility: visible;
   }
 }
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-up-sm {
+  from {
+    transform: translateY(10vh);
+    visibility: hidden;
+  }
+
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../animations/animations';
+
+.work {
+  &__content {
+    opacity: 0;
+    animation: fade-in 200ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards 725ms;
+  }
+  & p {
+    margin-bottom: 1rem;
+  }
+}
