@@ -6,9 +6,9 @@
   width: 30rem;
   margin: 0 auto;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 2rem;
   @media screen and (min-width: 375px) {
-    padding: 0 3rem 3rem;
+    padding: 0 3rem 0rem;
   }
   @media screen and (min-width: 1000px) {
     box-sizing: border-box;
@@ -19,12 +19,12 @@
   }
 
   @media screen and (min-width: 1186px) {
-    padding: 1.5rem 2rem 3rem;
+    padding: 1.5rem 9.3rem 3rem 8.3rem;
     max-width: 1600px;
   }
 
   &__brand {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -55,7 +55,7 @@
       }
     }
     & span {
-      color: $color-grey;
+      color: $color-pink;
       font-size: 1.6rem;
       font-weight: 300;
       margin-left: 5px;
@@ -103,7 +103,8 @@
       font-size: 1.6rem;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       transform: scaleX(1);
       transition: transform 300ms cubic-bezier(0.19, 1, 0.22, 1);
     }
@@ -114,7 +115,7 @@
       height: 100%;
       top: -3px;
       left: 0;
-      border-top: solid 5px $color-pewter;
+      border-top: solid 5px $color-pink;
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 200ms cubic-bezier(0.19, 1, 0.22, 1);

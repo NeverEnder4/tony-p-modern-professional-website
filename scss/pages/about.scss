@@ -1,33 +1,71 @@
 @import '../abstractions/abstactions';
 @import '../animations/animations';
 
+.about {
+  section {
+    @media screen and (min-width: 700px) {
+      margin-bottom: 3rem;
+    }
+    @media screen and (min-width: 1000px) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
 .bio {
+  margin-bottom: 3rem;
+  p {
+    position: relative;
+    max-width: 900px;
+  }
   &__image {
     width: 100%;
-    opacity: 0;
-    animation: fade-in 200ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards 200ms;
+    margin: 3rem 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    animation: slide-in-up 400ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     @media screen and (min-width: 700px) {
-      width: 50%;
+      height: 50%;
       align-self: center;
-      max-width: 450px;
+      max-width: 300px;
+      margin: 1rem 0;
     }
     @media screen and (min-width: 1250px) {
       align-self: flex-start;
-      max-width: 600px;
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      align-self: flex-start;
+      margin-top: -10vh;
+    }
+    @media screen and (min-width: 1700px) {
+      max-width: 500px;
     }
   }
   & h3 {
-    opacity: 0;
-    animation: fade-in 200ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
+    visibility: hidden;
+    transform: translateX(-30px);
+    animation: slide-in-right 600ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
   }
+
+  & p.bio__intro {
+    visibility: hidden;
+    opacity: 1;
+    transform: translateY(30px);
+    animation: slide-in-up 600ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  }
+
   & p {
-    opacity: 0;
-    animation: fade-in 200ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards 100ms;
+    visibility: hidden;
+    opacity: 1;
+    transform: translateY(30px);
+    animation: slide-in-up 600ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
   }
 
   &__p {
-    &--black {
-      color: $color-black;
+    &--pink {
+      color: $color-pink;
     }
   }
   &__flex-wrapper {
@@ -36,7 +74,9 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
+      margin-top: -2rem;
     }
   }
   &__flex-wrapper-paragraph {
@@ -51,21 +91,39 @@
 
 .skills {
   opacity: 0;
-  animation: fade-in 200ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards 300ms;
+  margin-bottom: 2rem;
+
+  animation: fade-in 400ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards 200ms;
   &__lists {
     display: flex;
     width: 100%;
   }
   &__list {
     width: 50%;
+    margin-left: 1rem;
+    @media screen and (min-width: 700px) {
+      margin-left: 2.5rem;
+    }
+
+    & h5 {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
 
     & li {
       @extend %paragraph-shared;
+      color: $color-pink;
+      font-weight: 300;
+
+      &:first-of-type {
+        margin-top: 2rem;
+      }
     }
   }
 }
 
 .services {
   opacity: 0;
+  margin-bottom: 2rem;
   animation: fade-in 200ms cubic-bezier(0.47, 0, 0.745, 0.715) forwards 400ms;
 }

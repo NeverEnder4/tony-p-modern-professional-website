@@ -1,0 +1,48 @@
+@import '../../../scss/abstractions/abstactions';
+
+.project-image {
+  width: 100%;
+  height: 23.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  &.full-width {
+    width: 98.5%;
+    height: auto;
+    @media screen and (min-width: 700px) {
+      width: 48%;
+      align-items: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    height: 23.4rem;
+    width: 33.8rem;
+  }
+
+  &--pewter {
+    background-color: $color-pewter;
+    align-items: center;
+  }
+  @media screen and (min-width: 700px) {
+    width: 48%;
+    height: 28rem;
+    margin-left: 1rem;
+    position: relative;
+    right: 0.5rem;
+  }
+  @media screen and (min-width: 1100px) {
+    height: 42rem;
+  }
+
+  & img {
+    width: 100%;
+    &.height {
+      height: 95%;
+      width: auto;
+    }
+  }
+}

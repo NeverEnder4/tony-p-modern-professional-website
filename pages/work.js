@@ -1,5 +1,7 @@
 import Layout from '../components/Layout/Layout';
 import FlexDisplay from '../components/FlexDisplay/FlexDisplay';
+import { projects } from '../static/seed-data/projects';
+
 import '../scss/pages/work.scss';
 
 const work = () => (
@@ -8,13 +10,12 @@ const work = () => (
       <div className="work__content">
         <h3>Work and Play</h3>
         <p>
-          These are a few of my highlighted projects. It is an ecclectic mix of
-          personal endeavors and freelance work.
+          These are a few of my highlighted projects. It is an ecclectic mix of{' '}
+          personal endeavors and freelance work .
         </p>
-        <h5>Please enjoy responsibly.</h5>
       </div>
 
-      <FlexDisplay />
+      <FlexDisplay projects={projects} page="work" />
     </section>
   </Layout>
 );
