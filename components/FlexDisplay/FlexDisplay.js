@@ -15,7 +15,7 @@ const FlexDisplay = ({ projects, projectSlug, projectPageData }) => {
     return (
       <div className="flex-display flex-display--flex-start">
         {projectPageData[projectSlug].images.map(image => (
-          <ProjectImage image={image} />
+          <ProjectImage image={image} key={image.name} />
         ))}
       </div>
     );
