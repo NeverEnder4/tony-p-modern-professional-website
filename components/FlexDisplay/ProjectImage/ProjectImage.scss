@@ -33,7 +33,14 @@
       align-items: flex-start;
     }
   }
-
+  &.cli-style {
+    width: 80%;
+    height: auto;
+    border: 10px solid $color-black;
+    @media screen and (min-width: 700px) {
+      width: 75%;
+    }
+  }
   @media screen and (min-width: 375px) {
     height: 23.4rem;
     width: 33.8rem;

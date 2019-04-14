@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from '../components/Layout/Layout';
 import FlexDisplay from '../components/FlexDisplay/FlexDisplay';
 
@@ -11,7 +12,15 @@ const project = ({ slug }) => {
     <Layout>
       <FlexDisplay projectPageData={projectPageData} projectSlug={slug} />
       <section className="project">
-        <h3>{project.name}</h3>
+        <div className="project__headline">
+          <h3>{project.name}</h3>
+          <Link href={`/project?slug=${project.next}`}>
+            <a>
+              Next Project
+              <img src="/static/arrow-right.svg" />
+            </a>
+          </Link>
+        </div>
         <p>{project.description}</p>
         <h3>Tech</h3>
         <p>{project.tech}</p>
